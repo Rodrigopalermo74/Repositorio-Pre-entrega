@@ -412,5 +412,19 @@ body {
     width: 150px;
   }
 }
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.button {
+  animation: buttonAnimation 1s infinite;
+}
 
 /*# sourceMappingURL=main.css.map */
