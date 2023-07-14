@@ -1,0 +1,83 @@
+@media (width < 1024px){
+    .presentacion figure{
+        width: 48%;
+    }
+}
+
+@media (width < 768px){
+    .presentacion{
+        padding: 0 20px;
+    }
+    .presentacion figure{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+        footer div:nth-child(2){
+            margin: 10px 0;
+        }
+    /* about */
+    .about .about__box--reverse,
+    .about .about__box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__img--md{
+        width: 300px;
+    }
+    .about h1,
+    .about h2{
+        text-align: center;
+    }
+    .releases figure{
+        width: 100%;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .tienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "actions" 
+        "filters"
+        "track1"
+        "track2"
+        "track3"
+        "track4";
+    }
+        .tienda .actions{
+            justify-content: flex-start;
+        }
+        .tienda .actions input{
+            width:260px;
+        }
+        .tienda .filters span,
+        .tienda .filters label,
+        .tienda .filters input[type="checkbox"],
+        .tienda .filters ul{
+            display: none;
+        } 
+        .tienda .filters select{
+            width: 100%;
+            background-color: rgb(243, 245, 245);
+            padding: 6px;
+            border-radius: 3px;
+            margin-top: 20px;
+        }
+        .tienda .track1,
+        .tienda .track2{
+            flex-direction: column;
+            padding: 10px;
+        }
+        .tienda .track1 p{
+            width: auto;
+            margin-left: 0;
+        }
+}
+
+@media (min-width:280px) and (max-width:320px){
+    .botonera img{
+        width: 150px;
+    }
+}

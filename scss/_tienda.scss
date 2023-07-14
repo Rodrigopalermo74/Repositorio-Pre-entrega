@@ -1,0 +1,120 @@
+.tienda{
+    display: grid;
+    grid-template-columns: 20% repeat(2,1fr);
+    grid-template-rows: 80px repeat(3, 300px);
+    gap: 5px;
+    grid-template-areas: 
+    "actions actions actions" 
+    "filters track1 track1" 
+    "filters track2 track3"
+    "filters track2 track4";
+    .actions{
+        padding: 0 30px;
+        grid-area: actions;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        button{
+            margin-left: 10px;
+            background-color: $mainColor;
+            color: white;
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+        }
+        input{
+            padding: 6px;
+            border-radius: 3px;
+            border: none;
+            background-color: rgb(243, 245, 245);
+        }
+    }
+    .filters{
+        padding: 0 18px 22px 28px;
+        grid-area: filters;
+        a{
+            color:$keyColor;
+            font-size: 1.5em;
+            text-decoration: none;
+            margin-bottom: 4px;
+            text-transform: lowercase;
+            &:hover{
+                color:$mainColor;
+            }
+        }
+        span{
+            display: block;
+            color:$keyColor;
+            margin: 10px 0;
+            letter-spacing: 1px;
+            font-size: 1.1em;
+        }
+        select{
+            color: $keyColor;
+            border: none;
+            background-color: white;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        li{
+            padding-left: 10px;
+            list-style: none;
+        }
+    }
+    .track1{
+       grid-area: track1;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       padding: 0 80px;
+       border: $mainColor 1px;
+        p{
+            width: 60%;
+            margin-left: 50px;
+            font-size: $textSm;
+        }
+    }
+    .track2{
+        grid-area: track2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px;
+        border: $mainColor 1px;
+        p{
+            width: 60%;
+            margin-left: 50px;
+            font-size: $textSm;
+        }
+    }
+    .track3{
+        grid-area: track3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: $mainColor 1px;
+        p{
+            width: 60%;
+            margin-left: 50px;
+            font-size: $textSm;
+        }
+    }
+    .track4{
+        grid-area: track4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: $mainColor 1px;
+        p{
+            width: 60%;
+            margin-left: 50px;
+            font-size: $textSm;
+        }
+    }
+
+    section{
+        border-radius: 10px;
+    }
+}
