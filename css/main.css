@@ -288,6 +288,12 @@ nav ul li a .botonera {
   border-radius: 10px;
 }
 
+body {
+  background-image: url(../img/fondo.avif);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
 .presentacion {
   display: flex;
   flex-direction: row;
