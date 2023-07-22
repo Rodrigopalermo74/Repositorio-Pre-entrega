@@ -34,7 +34,8 @@
         grid-area: filters;
         a{
             color:$keyColor;
-            font-size: 1.5em;
+            text-align: left;
+            font-size: $textSm;
             text-decoration: none;
             margin-bottom: 4px;
             text-transform: lowercase;

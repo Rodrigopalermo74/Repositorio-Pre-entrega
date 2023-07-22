@@ -206,7 +206,8 @@ nav ul li a .botonera {
 }
 .tienda .filters a {
   color: rgb(0, 0, 0);
-  font-size: 1.5em;
+  text-align: left;
+  font-size: 1em;
   text-decoration: none;
   margin-bottom: 4px;
   text-transform: lowercase;
@@ -244,7 +245,7 @@ nav ul li a .botonera {
 .tienda .track1 p {
   width: 60%;
   margin-left: 50px;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 .tienda .track2 {
   grid-area: track2;
@@ -258,7 +259,7 @@ nav ul li a .botonera {
 .tienda .track2 p {
   width: 60%;
   margin-left: 50px;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 .tienda .track3 {
   grid-area: track3;
@@ -270,7 +271,7 @@ nav ul li a .botonera {
 .tienda .track3 p {
   width: 60%;
   margin-left: 50px;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 .tienda .track4 {
   grid-area: track4;
@@ -282,7 +283,7 @@ nav ul li a .botonera {
 .tienda .track4 p {
   width: 60%;
   margin-left: 50px;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 .tienda section {
   border-radius: 10px;
@@ -319,7 +320,7 @@ body {
   font-size: 1.8em;
 }
 .presentacion figure p {
-  font-size: 1.4em;
+  font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 15px;
 }
