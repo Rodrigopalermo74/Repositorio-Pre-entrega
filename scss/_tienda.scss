@@ -1,6 +1,6 @@
 .tienda{
     display: grid;
-    grid-template-columns: 20% repeat(2,1fr);
+    grid-template-columns: 20% 30% 40%;
     grid-template-rows: 80px repeat(3, 300px);
     gap: 5px;
     grid-template-areas: 
@@ -48,18 +48,29 @@
             color:$keyColor;
             margin: 10px 0;
             letter-spacing: 1px;
-            font-size: 1.1em;
+            font-size: $textSm;
+            text-align: left;
+            margin-bottom: 4px;
         }
         select{
             color: $keyColor;
             border: none;
             background-color: white;
             margin-bottom: 10px;
-            font-size: 1em;
+            font-size: $textSm;
         }
         li{
             padding-left: 10px;
             list-style: none;
+        }
+        label{
+            display: block;
+            color:$keyColor;
+            margin: 10px 0;
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+            font-size: $textSm;
+            text-align: left;        
         }
     }
     .track1{
@@ -109,9 +120,14 @@
         align-items: center;
         border: $mainColor 1px;
         p{
-            width: 60%;
+            width: 30%;
             margin-left: 50px;
             font-size: $textSm;
+            padding-right: 5px;
+        }
+        iframe{
+            
+            
         }
     }
 
@@ -119,3 +135,4 @@
         border-radius: 10px;
     }
 }
+  

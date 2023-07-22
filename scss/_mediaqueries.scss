@@ -17,7 +17,6 @@
         footer div:nth-child(2){
             margin: 10px 0;
         }
-
     .about .about__box--reverse,
     .about .about__box{
         flex-direction: column;
@@ -66,13 +65,17 @@
             margin-top: 20px;
         }
         .tienda .track1,
-        .tienda .track2{
+        .tienda .track2
+        .tienda .track3{
             flex-direction: column;
             padding: 10px;
         }
         .tienda .track1 p{
             width: auto;
             margin-left: 0;
+        }
+        .tienda .track4{
+            
         }
 }
 
