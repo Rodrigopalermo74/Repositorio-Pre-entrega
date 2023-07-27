@@ -43,9 +43,10 @@ form label {
   font-size: 2.2em;
 }
 
-header img {
+header {
   width: 100%;
-  height: 10em;
+  position: relative;
+  overflow: hidden;
 }
 
 footer {
@@ -463,6 +464,38 @@ body {
 }
 .button {
   animation: buttonAnimation 1s infinite;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation-delay: 5s initial;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-overlay.active {
+  opacity: 1;
+}
+
+.header-text {
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  opacity: 1;
+  transform: translateY(25px);
+  transition: opacity 3s ease, transform 3s ease;
 }
 
 /*# sourceMappingURL=main.css.map */
