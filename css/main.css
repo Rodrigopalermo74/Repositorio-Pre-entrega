@@ -47,6 +47,7 @@ header {
   width: 100%;
   position: relative;
   overflow: hidden;
+  display: block;
 }
 
 footer {
@@ -381,6 +382,9 @@ body {
   .presentacion figure {
     width: 48%;
   }
+  .header-text {
+    font-size: 36px;
+  }
 }
 @media (width < 768px) {
   .presentacion {
@@ -437,18 +441,31 @@ body {
     margin-top: 20px;
   }
   .tienda .track1,
-  .tienda .track2 .tienda .track3 {
+  .tienda .track2 .tienda .track3 .tienda .track4 {
     flex-direction: column;
     padding: 10px;
+    width: auto;
   }
   .tienda .track1 p {
     width: auto;
     margin-left: 0;
   }
+  .header-text {
+    font-size: 30px;
+  }
 }
 @media (min-width: 280px) and (max-width: 320px) {
   .botonera img {
     width: 150px;
+  }
+  .header-text {
+    font-size: 20px;
+  }
+  .tienda {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .conteiner {
+    width: 100%;
   }
 }
 @keyframes buttonAnimation {
@@ -495,7 +512,7 @@ body {
   text-align: center;
   opacity: 1;
   transform: translateY(25px);
-  transition: opacity 3s ease, transform 3s ease;
+  transition: opacity 4s ease, transform 5s ease;
 }
 
 /*# sourceMappingURL=main.css.map */
