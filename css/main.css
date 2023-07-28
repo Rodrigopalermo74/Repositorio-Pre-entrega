@@ -50,6 +50,12 @@ header {
   display: block;
 }
 
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 footer {
   background-color: rgb(63, 48, 48);
   padding: 5px 30px;
@@ -383,7 +389,7 @@ body {
     width: 48%;
   }
   .header-text {
-    font-size: 36px;
+    font-size: 3.8em;
   }
 }
 @media (width < 768px) {
@@ -451,7 +457,7 @@ body {
     margin-left: 0;
   }
   .header-text {
-    font-size: 30px;
+    font-size: 1.8em;
   }
 }
 @media (min-width: 280px) and (max-width: 320px) {
@@ -459,7 +465,7 @@ body {
     width: 150px;
   }
   .header-text {
-    font-size: 20px;
+    font-size: 0.5em;
   }
   .tienda {
     grid-template-columns: repeat(1, 1fr);
@@ -483,11 +489,20 @@ body {
   animation: buttonAnimation 1s infinite;
 }
 
+@keyframes animacionTexto {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .header-image {
   width: 100%;
   height: auto;
   display: block;
-  animation-delay: 5s initial;
 }
 
 .header-overlay {
@@ -503,16 +518,18 @@ body {
 }
 
 .header-overlay.active {
-  opacity: 1;
+  opacity: 1 infinite;
+  animation-delay: 5s infinite;
 }
 
 .header-text {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 2.2em;
   text-align: center;
   opacity: 1;
   transform: translateY(25px);
-  transition: opacity 4s ease, transform 5s ease;
+  transition: opacity 6s ease, transform 5s ease;
+  animation: animacionTexto 1s ease-in-out;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -13,11 +13,14 @@
 .button {
   animation: buttonAnimation 1s infinite;
 }
+@keyframes animacionTexto {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 .header-image {
   width: 100%;
   height: auto;
   display: block;
-  animation-delay: 5s initial;
 }
 
 .header-overlay {
@@ -32,14 +35,16 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .header-overlay.active {
-  opacity: 1;
+  opacity: 1 infinite;
+  animation-delay: 5s infinite
 } 
 .header-text {
   color: #ffffff;
-  font-size: 36px;
+  font-size: $textLg;
   text-align: center;
   opacity: 1;
   transform: translateY(25px);
-  transition: opacity 4s ease, transform 5s ease;
+  transition: opacity 6s ease, transform 5s ease;
+  animation: animacionTexto 1s ease-in-out;
 }  
   
