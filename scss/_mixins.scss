@@ -1,1 +1,17 @@
-
+@mixin header-styles($font-size, $color) {
+    font-size: $font-size;
+    color: $color;
+    margin-bottom: 10px;
+  }
+  h1 {
+    @include header-styles(2.2em, rgb(46, 46, 46));
+  }
+  
+  h2 {
+    @include header-styles(2.2em, rgb(46, 46, 46));
+  }
+  
+  h3 {
+    @include header-styles(1em, rgb(46, 46, 46));
+  }
+    
