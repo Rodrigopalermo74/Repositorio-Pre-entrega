@@ -85,6 +85,7 @@
             width: 60%;
             margin-left: 50px;
             font-size: $textSm;
+            color: $white;
         }
     }
     .track2{
@@ -93,12 +94,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0 50px;
+        padding: 0 80px;
         border: $mainColor 1px;
         p{
             width: 60%;
             margin-left: 50px;
             font-size: $textSm;
+            color: $white;
         }
     }
     .track3{
@@ -107,10 +109,13 @@
         justify-content: center;
         align-items: center;
         border: $mainColor 1px;
+        padding: 0 80px;
+        
         p{
             width: 60%;
             margin-left: 50px;
             font-size: $textSm;
+            color: $white;
         }
     }
     .track4{
@@ -119,11 +124,13 @@
         justify-content: center;
         align-items: center;
         border: $mainColor 1px;
+        padding: 0 60px;
         p{
             width: 30%;
             margin-left: 50px;
             font-size: $textSm;
             padding-right: 5px;
+            color: $white;
         }
     }
 
